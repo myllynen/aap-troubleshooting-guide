@@ -37,7 +37,7 @@ awx-manage list_instances
 
 ### Jobs Overview
 
-To see currently running jobs visit the Jobs page on the Web UI:
+To see currently running jobs visit the _Jobs_ page on the Web UI:
 
 * [https://aap.example.com/#/jobs](https://aap.example.com/#/jobs)
 
