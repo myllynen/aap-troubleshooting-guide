@@ -37,7 +37,7 @@ awx-manage list_instances
 
 ### Jobs Overview
 
-To see currently running jobs visit the _Jobs_ page on the Web UI:
+To see currently running jobs visit the jobs page on the Web UI:
 
 * [https://aap.example.com/#/jobs](https://aap.example.com/#/jobs)
 
@@ -68,17 +68,17 @@ handle Unix text files properly). Third, and sometimes the best, option
 is to open the API page which shows the output in full page mode, for
 instance (obviously replace the job number as appropriate):
 
-[https://aap.example.com/api/v2/jobs/1234b/stdout/](https://aap.example.com/api/v2/jobs/1234b/stdout/)
+[https://aap.example.com/api/v2/jobs/1234/stdout/](https://aap.example.com/api/v2/jobs/1234/stdout/)
 
 ### Debugging a Job
 
-In case a job is not completing as expected as the first step it may be
-a good idea to increase verbosity and disable job slicing to allow
-better see what is going on. Visit the job template page, set _Job
-Slicing_ to `1` and apply suitable value for _Verbosity_. Note that
-high verbosity values (`3` and above) may in some cases cause secrets
-to be logged. According to Ansible developers this is "by design." A
-reasonable starting verbosity level is often `2`.
+In case a job is not completing as expected it may be a good idea to
+increase verbosity and disable job slicing to allow better see what is
+going on. Visit the job template page, set _Job Slicing_ to `1` and
+apply suitable value for _Verbosity_. Note that high verbosity values
+(`3` and above) may in some cases cause secrets to be logged. According
+to Ansible developers this is intended. A reasonable starting verbosity
+level is often `2`.
 
 If there are one or few hosts in the current inventory known to be
 problematic those could be (temporarily) excluded by editing the
@@ -92,18 +92,19 @@ controller and/or execution node(s). First, check the AAP topology and
 possible job details to identify relevant nodes.
 
 On the command line `awx-manage list_instances` can be used to display
-AAP instances and topology. For details about automation mesh, use the
-`receptorctl` command. For instance, to display basics about the current node and automation mesh setup and status use:
+AAP instances and topology. For details about automation mesh use the
+`receptorctl` command. For instance, to display basics about the
+current node and automation mesh setup and status use:
 
 ```
 receptorctl --socket /run/awx-receptor/receptor.sock
 ```
 
 On controller nodes the most relevant logs are typically in
-/var/log/tower.
+_/var/log/tower_.
 
 On execution nodes the most relevant logs are probably
-/var/log/messages and in /var/log/receptor.
+_/var/log/messages_ and in _/var/log/receptor_.
 
 ## Additional Information
 
