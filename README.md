@@ -97,7 +97,7 @@ AAP instances and topology. For details about automation mesh use the
 current node and automation mesh setup and status use:
 
 ```
-receptorctl --socket /run/awx-receptor/receptor.sock
+receptorctl --socket /run/awx-receptor/receptor.sock status
 ```
 
 On controller nodes the most relevant logs are typically in
