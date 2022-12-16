@@ -70,6 +70,9 @@ instance (obviously replace the job number as appropriate):
 
 [https://aap.example.com/api/v2/jobs/1234/stdout/](https://aap.example.com/api/v2/jobs/1234/stdout/)
 
+The output can be downloaded in plain text format by adding
+`?format=txt` to end of the URL.
+
 ### Debugging a Job
 
 In case a job is not completing as expected it may be a good idea to
