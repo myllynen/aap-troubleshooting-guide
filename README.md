@@ -103,6 +103,12 @@ current node and automation mesh setup and status use:
 receptorctl --socket /run/awx-receptor/receptor.sock status
 ```
 
+To ping a node as part of the automation mesh use:
+
+```
+receptorctl --socket /run/awx-receptor/receptor.sock ping en-1.example.com
+```
+
 On controller nodes the most relevant logs are typically in
 _/var/log/tower_.
 
