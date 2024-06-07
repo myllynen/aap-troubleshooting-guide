@@ -52,10 +52,9 @@ Details_ page and always use `Check` or `Run` as appropriate.
 
 To find jobs related to a certain host or group on the Web UI the
 [filtering](https://ansible.readthedocs.io/projects/awx/en/latest/rest_api/filtering.html)
-capabilities of the automation controller can be used.
-
-For example, to find all the jobs where the limit included _server23_
-use the following URL:
+capabilities of the automation controller can be used. For example, to
+find all the jobs where the limit included _server23_ use the following
+URL:
 
 [https://aap.example.com/#/jobs?job.job__limit__contains=server23](https://aap.example.com/#/jobs?job.job__limit__contains=server23)
 
