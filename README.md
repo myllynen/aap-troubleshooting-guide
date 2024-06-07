@@ -48,6 +48,17 @@ AAP-wide default configurations, see _Settings → Job_ settings. Pay
 special attention to the _Job Type_ parameter in the _Template →
 Details_ page and always use `Check` or `Run` as appropriate.
 
+### Finding a Relevant Job
+
+To find jobs related to a certain host or group on the Web UI the
+[https://ansible.readthedocs.io/projects/awx/en/latest/rest_api/filtering.html](filtering)
+capabilities of the automation controller can be used.
+
+For example, to find all the jobs where the limit included _server23_
+use the following URL:
+
+[https://aap.example.com/#/jobs?job.job__limit__contains=server23](https://aap.example.com/#/jobs?job.job__limit__contains=server23)
+
 ### Investigating Individual Job
 
 For details of a running or a past job navigate to _Jobs → Number/Name
