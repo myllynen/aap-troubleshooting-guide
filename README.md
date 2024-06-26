@@ -10,10 +10,13 @@ Themed page: [https://myllynen.github.io/aap-troubleshooting-guide](https://myll
 This page provides basic Ansible Automation Platform (AAP)
 troubleshooting tips and tricks.
 
-For Red Hat Ansible Automation Controller troubleshooting docs, see the
+For Red Hat Troubleshooting Ansible Automation Platform guide, see
+[Troubleshooting Ansible Automation Platform](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.4/html/troubleshooting_ansible_automation_platform/index).
+
+For Red Hat Ansible automation controller troubleshooting docs, see the
 [AAP Troubleshooting page](https://docs.ansible.com/automation-controller/latest/html/administration/troubleshooting.html).
 
-For Red Hat Ansible Automation Controller generic user guide, see the
+For Red Hat Ansible automation controller generic user guide, see the
 [AAP User Guide](https://docs.ansible.com/automation-controller/latest/html/userguide/index.html).
 
 ## Ansible Automation Platform Setup
@@ -119,16 +122,16 @@ To ping a node as part of the automation mesh use:
 receptorctl --socket /run/awx-receptor/receptor.sock ping en-1.example.com
 ```
 
-On controller nodes the most relevant logs are typically in
+On the controller nodes the most relevant logs are typically in
 _/var/log/tower_.
 
-On execution nodes the most relevant logs are probably
+On the execution nodes the most relevant logs are probably
 _/var/log/messages_ and in _/var/log/receptor_.
 
 ## Additional Information
 
-* [Ansible Automation Controller admin guide](https://docs.ansible.com/automation-controller/latest/html/administration/index.html)
-* [Ansible Automation Controller user guide](https://docs.ansible.com/automation-controller/latest/html/userguide/index.html)
+* [Ansible automation controller admin guide](https://docs.ansible.com/automation-controller/latest/html/administration/index.html)
+* [Ansible automation controller user guide](https://docs.ansible.com/automation-controller/latest/html/userguide/index.html)
 
 # See Also
 
