@@ -10,8 +10,8 @@ Themed page: [https://myllynen.github.io/aap-troubleshooting-guide](https://myll
 This page provides basic Ansible Automation Platform (AAP)
 troubleshooting tips and tricks.
 
-For Red Hat Troubleshooting Ansible Automation Platform guide, see
-[Troubleshooting Ansible Automation Platform](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.4/html/troubleshooting_ansible_automation_platform/index).
+For the official Ansible Automation Platform troubleshooting guide, see
+[Ansible Automation Platform troubleshooting](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/).
 
 For Red Hat Ansible automation controller troubleshooting docs, see the
 [AAP Troubleshooting page](https://docs.ansible.com/automation-controller/latest/html/administration/troubleshooting.html).
@@ -22,8 +22,8 @@ For Red Hat Ansible automation controller generic user guide, see the
 ## Ansible Automation Platform Setup
 
 For understanding Ansible Automation Platform setup check its topology
-view, instances, and settings Web UI pages. The location of these page
-would be something like:
+view, instances, and settings Web UI pages. These pages would be
+something like:
 
 * [https://aap.example.com/#/topology_view](https://aap.example.com/#/topology_view)
 * [https://aap.example.com/#/instances](https://aap.example.com/#/instances)
@@ -122,18 +122,12 @@ To ping a node as part of the automation mesh use:
 receptorctl --socket /run/awx-receptor/receptor.sock ping en-1.example.com
 ```
 
-On the controller nodes the most relevant logs are typically in
-_/var/log/tower_.
-
-On the execution nodes the most relevant logs are probably
-_/var/log/messages_ and in _/var/log/receptor_.
-
 ## Additional Information
 
 * [Ansible automation controller admin guide](https://docs.ansible.com/automation-controller/latest/html/administration/index.html)
 * [Ansible automation controller user guide](https://docs.ansible.com/automation-controller/latest/html/userguide/index.html)
 
-# See Also
+## See Also
 
 See also
 [https://github.com/myllynen/rhel-troubleshooting-guide](https://github.com/myllynen/rhel-troubleshooting-guide).
